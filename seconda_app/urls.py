@@ -1,7 +1,8 @@
 from os import name
 from django.urls import path
-from seconda_app.views import homepage,welcome,lista,chi_siamo,index
-from seconda_app.views import variabili
+from seconda_app.views import es_if
 
-app_name="secodna_app"
-urlpatterns=[]
+app_name="seconda_app"
+urlpatterns=[
+    path('es_if',es_if,name='es_if')
+]
