@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{articolo.titolo}}
+{% endblock title %}
+
+{% block content %}
+    <p><strong>Nome: </strong>{{giornalista.nome}}</p>
+    <p><strong>Cognome: </strong>{{giornalista.cognome}}</p>
+    <hr>
+{% endblock content %}
