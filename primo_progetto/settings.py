@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'prima_app',
     'seconda_app',
     'news',
+    'prova_pratica_1',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -62,7 +63,8 @@ TEMPLATES = [
                  os.path.join(BASE_DIR, 'seconda_app/templates'),
                  os.path.join(BASE_DIR, 'news/templates'),
                  os.path.join(BASE_DIR, 'templates'),
-                 ],
+                 os.path.join(BASE_DIR, 'prova_pratica_1/templates'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

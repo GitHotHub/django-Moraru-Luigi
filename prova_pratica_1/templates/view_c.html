@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+
+    {% block content %}
+        <ul>
+            <h3>Giuseppe Gullo:</h3>
+            {% for x in GiuseppeGullo %}
+                <li>{{x}}</li>
+            {% endfor %}
+            <h3>Antonio Barbera:</h3>
+            {% for x in AntonioBarbera %}
+                <li>{{x}}</li>
+            {% endfor %}
+            <h3>Nicola Spina:</h3>
+            {% for x in NicolaSpina %}
+                <li>{{x}}</li>
+            {% endfor %}
+        </ul>
+    {% endblock %}
+</body>
+</html>
